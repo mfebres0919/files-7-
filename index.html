@@ -1,0 +1,1821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ridgeline Pools — Austin's premier custom gunite pool builder. 18+ years building luxury custom pools across Central Texas.">
+  <title>Ridgeline Pools | Austin's Custom Pool Builder</title>
+
+  <!-- Preload critical fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Preload hero background image (above fold — never lazy load) -->
+  <link rel="preload" as="image"
+        href="images/home/jpg/home-hero-m.jpeg"
+        media="(max-width: 767px)">
+  <link rel="preload" as="image"
+        href="images/home/jpg/home-hero-d.jpeg"
+        media="(min-width: 768px)">
+
+  <!-- CSS load order: tokens → components → page styles -->
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="nav-hero.css">
+</head>
+<body>
+
+  <!-- =====================================================================
+     TOPBAR
+     Dark grey strip — hours / phone / address / socials
+     Hidden on mobile, shown at 1024px+
+  ====================================================================== -->
+  <div id="topbar">
+    <div class="container topbar-inner">
+
+      <div class="topbar-info">
+
+        <!-- Hours -->
+        <span class="topbar-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+               stroke="currentColor" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" stroke-width="1.5"/>
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="1.5" d="M12 6v6l4 2"/>
+          </svg>
+          Mon – Sat &nbsp;7:00 AM – 5:00 PM
+        </span>
+
+        <!-- Phone -->
+        <span class="topbar-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+               stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M2.25 6.338c0-.414.336-.75.75-.75h2.25a.75.75 0 0 1 .743.647l.63 4.2a.75.75 0 0 1-.44.813l-1.27.508a11.25 11.25 0 0 0 5.38 5.38l.508-1.27a.75.75 0 0 1 .814-.44l4.2.63a.75.75 0 0 1 .647.743V18a.75.75 0 0 1-.75.75C9.716 18.75 2.25 11.284 2.25 6.338Z"/>
+          </svg>
+          <a href="tel:+15124567890">(512) 456-7890</a>
+        </span>
+
+        <!-- Address -->
+        <span class="topbar-item">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+               stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/>
+          </svg>
+          <a href="https://maps.google.com" target="_blank" rel="noopener">
+            18 Ridgeline Drive, Austin, TX 78701
+          </a>
+        </span>
+
+      </div>
+
+      <!-- Social icons -->
+      <div class="topbar-social">
+        <a href="#" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="X / Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <!-- /TOPBAR -->
+
+
+  <!-- =====================================================================
+     NAVBAR
+     White background, sticky, dark text, maroon accents
+  ====================================================================== -->
+  <header id="navbar">
+    <div class="container nav-inner">
+
+      <!-- Logo -->
+      <a href="#hero" class="nav-logo" aria-label="Ridgeline Pools — Home">
+        RIDGELINE<span>.</span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+
+          <li><a href="#hero" class="is-active">Home</a></li>
+          <li><a href="html/about.html">About</a></li>
+
+          <!-- Services dropdown -->
+          <li>
+            <button class="nav-drop-toggle" aria-expanded="false" aria-haspopup="true">
+              Services
+              <svg class="nav-chevron" xmlns="http://www.w3.org/2000/svg" fill="none"
+                   viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <ul class="nav-dropdown" role="menu">
+              <li role="none"><a href="html/services/custom-builds.html" role="menuitem">Custom Pool Construction</a></li>
+              <li role="none"><a href="html/services/renovations.html" role="menuitem">Remodeling &amp; Renovation</a></li>
+              <li role="none"><a href="html/services/add-ons.html" role="menuitem">Luxury Features &amp; Add-Ons</a></li>
+              <li role="none"><a href="html/services.html" role="menuitem">View All Services</a></li>
+            </ul>
+          </li>
+
+          <li><a href="html/gallery.html">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+      </nav>
+
+      <!-- Desktop CTA -->
+      <div class="nav-cta">
+        <a href="html/quote.html" class="btn-primary">
+          Get a Quote
+          <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Hamburger (mobile only) -->
+      <button class="nav-hamburger" aria-expanded="false"
+              aria-label="Open navigation menu" aria-controls="mobile-drawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Mobile dropdown menu -->
+      <nav class="nav-drawer" id="mobile-drawer" aria-label="Mobile navigation">
+        <ul>
+          <li><a href="#hero" class="is-active">Home</a></li>
+          <li><a href="html/about.html">About</a></li>
+
+          <!-- Services accordion -->
+          <li>
+            <button class="nav-drop-toggle" aria-expanded="false">
+              Services
+              <svg class="nav-chevron" xmlns="http://www.w3.org/2000/svg" fill="none"
+                   viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <ul class="nav-sub">
+              <li><a href="html/services/custom-builds.html">Custom Pool Construction</a></li>
+              <li><a href="html/services/renovations.html">Remodeling &amp; Renovation</a></li>
+              <li><a href="html/services/add-ons.html">Luxury Features &amp; Add-Ons</a></li>
+              <li><a href="html/services.html">View All Services</a></li>
+            </ul>
+          </li>
+
+          <li><a href="html/gallery.html">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-drawer-cta">
+          <a href="html/quote.html" class="btn-primary">
+            Get a Quote
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
+            </svg>
+          </a>
+        </div>
+
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Overlay behind mobile drawer -->
+  <div class="nav-overlay" aria-hidden="true"></div>
+  <!-- /NAVBAR -->
+
+
+  <!-- =====================================================================
+     HERO SECTION
+     Full-width background image, dark overlay
+     Eyebrow → H1 → divider → body → buttons → badges
+     Service cards floating bottom-right (desktop)
+  ====================================================================== -->
+  <section id="hero">
+
+    <!-- Background image — NOT lazy loaded (above fold) -->
+    <picture class="hero-bg">
+      <source media="(max-width: 767px)"
+              srcset="images/custom-builds/calc-4.png"
+              type="image/png">
+      <source media="(min-width: 768px)"
+              srcset="images/custom-builds/calc-4.png"
+              type="image/png">
+      <img
+        src="images/custom-builds/calc-4.png"
+        alt=""
+        aria-hidden="true"
+        width="1920"
+        height="960"
+        decoding="async">
+        <!-- No loading="lazy" — this is the above-the-fold LCP image -->
+    </picture>
+
+    <!-- Dark gradient overlay -->
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="container hero-inner">
+
+      <!-- Left: text + CTAs -->
+      <div class="hero-content reveal fade-right">
+
+        <!-- Eyebrow -->
+        <p class="hero-eyebrow">Austin's Premier Pool Builder</p>
+
+        <!-- H1 — tight condensed display -->
+        <h1 class="hero-heading">
+          Built For<br>
+          The Way Your<br>
+          <span class="accent">Family Lives</span>
+        </h1>
+
+        <!-- Maroon divider line -->
+        <div class="hero-divider" aria-hidden="true"></div>
+
+        <!-- Body copy -->
+        <p class="hero-body">
+          We design and build fully custom gunite pools for Austin homeowners
+          who want something done right the first time. Every project is
+          tailored to your home, your yard, and your lifestyle.
+        </p>
+
+        <!-- CTA buttons -->
+        <div class="hero-btns">
+          <a href="html/quote.html" class="btn-primary">
+            Get Free Quote
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
+            </svg>
+          </a>
+          <a href="html/gallery.html" class="btn-ghost-white">
+            View Our Work
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Trust badges -->
+        <div class="hero-pricing-note">
+          <span class="hero-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                 stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            Projects start at $85k+
+          </span>
+          <span class="hero-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                 stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/>
+            </svg>
+            4.9 Stars — 500+ Reviews
+          </span>
+          <span class="hero-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                 stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            18+ Years in Austin
+          </span>
+        </div>
+
+      </div>
+      <!-- /hero-content -->
+
+      <!-- Right: service quick-links (Brickz-style numbered cards) -->
+      <div class="hero-cards reveal fade-left delay-2">
+
+        <a href="html/services/custom-builds.html" class="hero-card-item">
+          <span class="hero-card-num">01</span>
+          <span class="hero-card-label">Custom Pool Construction</span>
+          <svg class="hero-card-arrow" xmlns="http://www.w3.org/2000/svg" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
+          </svg>
+        </a>
+
+        <a href="html/services/renovations.html" class="hero-card-item">
+          <span class="hero-card-num">02</span>
+          <span class="hero-card-label">Remodeling &amp; Renovation</span>
+          <svg class="hero-card-arrow" xmlns="http://www.w3.org/2000/svg" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
+          </svg>
+        </a>
+
+        <a href="html/services/add-ons.html" class="hero-card-item">
+          <span class="hero-card-num">03</span>
+          <span class="hero-card-label">Luxury Features &amp; Add-Ons</span>
+          <svg class="hero-card-arrow" xmlns="http://www.w3.org/2000/svg" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
+          </svg>
+        </a>
+
+        <a href="html/gallery.html" class="hero-card-item">
+          <span class="hero-card-num">04</span>
+          <span class="hero-card-label">View Project Gallery</span>
+          <svg class="hero-card-arrow" xmlns="http://www.w3.org/2000/svg" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
+          </svg>
+        </a>
+
+      </div>
+      <!-- /hero-cards -->
+
+    </div>
+    <!-- /hero-inner -->
+
+  </section>
+  <!-- /HERO -->
+
+
+  <!-- =====================================================================
+     ABOUT SECTION
+     Big image left | right column: eyebrow/h2/body/tab-row
+     Tab row: tabs+checklist+btn LEFT | secondary image+stat RIGHT
+  ====================================================================== -->
+  <section id="about" class="section-padding">
+    <div class="container about-inner">
+
+      <!-- ── Left: big image + badge ── -->
+      <div class="about-img-col reveal fade-right">
+        <picture>
+          <source media="(max-width: 767px)"
+                  srcset="images/custom-builds/calc-9.png" type="image/png">
+          <source media="(min-width: 768px)"
+                  srcset="images/custom-builds/calc-9.png" type="image/jpeg">
+          <img
+            class="about-img-main"
+            src="images/custom-builds/calc-9.png"
+            alt="Ridgeline Pools crew reviewing blueprints on a job site"
+            width="600"
+            height="450"
+            loading="lazy"
+            decoding="async">
+        </picture>
+
+        <!-- Maroon badge overlay bottom-right -->
+        <div class="about-img-badge" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5
+              4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5
+              4.5 0 00-3.09 3.09z"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- ── Right: all content ── -->
+      <div class="about-content reveal fade-left">
+
+        <p class="eyebrow">About Ridgeline Pools</p>
+        <h2>Austin's Most Trusted Custom Pool Builder</h2>
+        <p>
+          We are not a franchise. We are not a volume builder. Since 2007,
+          Ridgeline Pools has designed and constructed custom gunite pools
+          across Central Texas with our own hands, our own crew, and
+          standards no sub-contractor could match.
+        </p>
+
+        <!-- ── Tab row: left col = tabs/content/btn | right col = image+stat ── -->
+        <div class="about-tab-row">
+
+          <!-- Left: tabs + panel content + button -->
+          <div class="about-tab-col">
+
+            <!-- Tab buttons -->
+            <div class="about-tabs" role="tablist" aria-label="About sections">
+              <button class="about-tab-btn is-active"
+                      role="tab" aria-selected="true"
+                      aria-controls="tab-mission" id="btn-mission"
+                      data-tab="mission">Mission</button>
+              <button class="about-tab-btn"
+                      role="tab" aria-selected="false"
+                      aria-controls="tab-vision" id="btn-vision"
+                      data-tab="vision">Vision</button>
+              <button class="about-tab-btn"
+                      role="tab" aria-selected="false"
+                      aria-controls="tab-values" id="btn-values"
+                      data-tab="values">Core Values</button>
+            </div>
+
+            <!-- Mission panel -->
+            <div class="about-tab-panel is-active"
+                 id="tab-mission" role="tabpanel" aria-labelledby="btn-mission">
+              <p>To build pools that outlast trends, outlast cheap competitors,
+                and become the defining feature of a family's home for generations.
+                Every project gets our full attention — no exceptions.</p>
+              <ul class="about-checklist">
+                <li>No sub-contractors on structural work — ever</li>
+                <li>30–40 builds per year by choice, not limitation</li>
+                <li>Dedicated point of contact for every homeowner</li>
+              </ul>
+              <a href="html/about.html" class="btn-primary">
+                Learn More
+                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg"
+                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Vision panel -->
+            <div class="about-tab-panel"
+                 id="tab-vision" role="tabpanel" aria-labelledby="btn-vision">
+              <p>To be Central Texas's most respected luxury pool builder —
+                not the biggest. We measure success by referrals, not volume.
+                A Ridgeline pool should speak for itself the moment someone sees it.</p>
+              <ul class="about-checklist">
+                <li>Premium gunite — built to last 30+ years</li>
+                <li>3D design approval before any excavation begins</li>
+                <li>Full permit and inspection management, start to finish</li>
+              </ul>
+              <a href="html/about.html" class="btn-primary">
+                Learn More
+                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg"
+                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Core Values panel -->
+            <div class="about-tab-panel"
+                 id="tab-values" role="tabpanel" aria-labelledby="btn-values">
+              <p>Craft over speed. Honesty over sales. Local knowledge over
+                corporate playbooks. We hire for character first and skill second —
+                because both have to show up on your job site.</p>
+              <ul class="about-checklist">
+                <li>Radical honesty — we tell you what your site can support</li>
+                <li>18 years of Austin soil, rock, and climate knowledge</li>
+                <li>No pressure, no upselling, no hidden costs</li>
+              </ul>
+              <a href="html/about.html" class="btn-primary">
+                Learn More
+                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg"
+                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
+                </svg>
+              </a>
+            </div>
+
+          </div>
+          <!-- /about-tab-col -->
+
+          <!-- Right: secondary image + caption + stat -->
+          <div class="about-aside-col">
+
+            <div class="about-secondary-img img-zoom">
+              <picture>
+                <img
+                  src="images/home/jpg/about-video-d.jpeg"
+                  alt="Ridgeline Pools team reviewing plans"
+                  width="190"
+                  height="145"
+                  loading="lazy"
+                  decoding="async">
+              </picture>
+            </div>
+
+            <p class="about-aside-caption">
+              18 years of Austin pools — built by people who care about the craft.
+            </p>
+
+            <div class="about-stat">
+              <span class="about-stat-num">250<span>+</span></span>
+              <span class="about-stat-label">Pools Built in Austin</span>
+            </div>
+
+          </div>
+          <!-- /about-aside-col -->
+
+        </div>
+        <!-- /about-tab-row -->
+
+      </div>
+      <!-- /about-content -->
+
+    </div>
+  </section>
+  <!-- /ABOUT -->
+
+
+  <!-- =====================================================================
+     SERVICES SECTION
+     Light grey bg, centered header, 4 cards
+     Hover: bg image fades in, icon darkens, button fills maroon
+  ====================================================================== -->
+  <section id="services" class="section-padding">
+
+    <!-- =========================================================
+         BACKGROUND VIDEO
+         To use your own video, change ONLY the src below.
+           • Local file:  src="videos/services-bg.mp4"
+           • Hosted link: src="https://your-cdn.com/services-bg.mp4"
+         The poster image shows instantly and stays visible until
+         the video loads (or if it fails / is removed), so the
+         section never looks broken.
+    ========================================================== -->
+    <div class="services-bg" aria-hidden="true">
+      <video
+        class="services-bg-video"
+        autoplay muted loop playsinline preload="auto"
+        poster="images/home/jpg/services-custom-d.jpeg">
+        <!-- ▼▼▼  YOUR VIDEO GOES HERE — swap this one line  ▼▼▼ -->
+        <source src="videos/services-bg.mp4" type="video/mp4">
+        <!-- ▲▲▲  (optional 2nd line for a .webm version)    ▲▲▲ -->
+      </video>
+      <div class="services-bg-overlay"></div>
+    </div>
+
+    <div class="container">
+
+      <!-- Header -->
+      <div class="services-header reveal fade-up">
+        <p class="eyebrow">Our Providing Services</p>
+        <h2>Expert Pool Design &amp; Construction Services For Every Backyard</h2>
+      </div>
+
+      <!-- Cards grid -->
+      <div class="services-grid">
+
+        <!-- Card 1: Custom Pool Construction -->
+        <div class="service-card reveal fade-up delay-1">
+
+          <!-- Bg image — fades in on hover -->
+          <div class="service-card-bg" aria-hidden="true">
+            <picture>
+              <img src="images/home/jpg/services-custom-d.jpeg"
+                   alt=""
+                   width="400" height="500"
+                   loading="lazy" decoding="async">
+            </picture>
+          </div>
+
+          <div class="service-card-inner">
+            <!-- Icon -->
+            <div class="service-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                   viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Custom Pool Construction</h3>
+            <p class="service-card-body">Fully custom gunite pools designed around your home, your yard, and the way your family actually lives. Built right the first time.</p>
+            <ul class="service-checklist">
+              <li>3D design before excavation begins</li>
+              <li>All permits &amp; inspections handled</li>
+            </ul>
+            <a href="html/services/custom-builds.html" class="service-card-btn">
+              Explore More
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                   viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Remodeling & Renovation -->
+        <div class="service-card reveal fade-up delay-2">
+
+          <div class="service-card-bg" aria-hidden="true">
+            <picture>
+              <img src="images/home/jpg/services-renovation-d.jpeg"
+                   alt=""
+                   width="400" height="500"
+                   loading="lazy" decoding="async">
+            </picture>
+          </div>
+
+          <div class="service-card-inner">
+            <div class="service-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                   viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Remodeling &amp; Renovation</h3>
+            <p class="service-card-body">Transform an aging pool into something you're proud of again. New plaster, coping, tile, equipment, and full structural overhauls.</p>
+            <ul class="service-checklist">
+              <li>Before &amp; after design consultation</li>
+              <li>Equipment upgrades &amp; automation</li>
+            </ul>
+            <a href="html/services/renovations.html" class="service-card-btn">
+              Explore More
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                   viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Luxury Features & Add-Ons -->
+        <div class="service-card reveal fade-up delay-3">
+
+          <div class="service-card-bg" aria-hidden="true">
+            <picture>
+              <img src="images/home/jpg/services-add-ons-d.jpeg"
+                   alt=""
+                   width="400" height="500"
+                   loading="lazy" decoding="async">
+            </picture>
+          </div>
+
+          <div class="service-card-inner">
+            <div class="service-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                   viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Luxury Features &amp; Add-Ons</h3>
+            <p class="service-card-body">Water features, fire bowls, grottos, spa spillovers, tanning ledges, and outdoor kitchens — everything that turns a pool into a resort.</p>
+            <ul class="service-checklist">
+              <li>Custom water &amp; fire features</li>
+              <li>Outdoor kitchens &amp; pergolas</li>
+            </ul>
+            <a href="html/services/add-ons.html" class="service-card-btn">
+              Explore More
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                   viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4: Pool Maintenance & Upkeep -->
+        <div class="service-card reveal fade-up delay-4">
+
+          <div class="service-card-bg" aria-hidden="true">
+            <picture>
+              <img src="images/home/jpg/home-cta-1-d.jpeg"
+                   alt=""
+                   width="400" height="500"
+                   loading="lazy" decoding="async">
+            </picture>
+          </div>
+
+          <div class="service-card-inner">
+            <div class="service-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                   viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 010 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 010-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <h3 class="service-card-title">Maintenance &amp; Pool Upkeep</h3>
+            <p class="service-card-body">Keep your investment in peak condition year-round. Scheduled cleaning, chemical balancing, equipment checks, and seasonal prep.</p>
+            <ul class="service-checklist">
+              <li>Weekly &amp; monthly service plans</li>
+              <li>Equipment repair &amp; diagnostics</li>
+            </ul>
+            <a href="#contact" class="service-card-btn">
+              Explore More
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                   viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <!-- /services-grid -->
+
+    </div>
+  </section>
+  <!-- /SERVICES -->
+
+
+  <!-- =====================================================================
+     STATS BAR — infinite left-to-right marquee
+     Two identical sets side by side; CSS animates the track left by 50%
+     creating a seamless infinite loop. Pauses on hover.
+  ====================================================================== -->
+  <section id="stats-bar" aria-label="Ridgeline Pools by the numbers">
+    <div class="stats-marquee-wrap">
+      <div class="stats-marquee-track" aria-hidden="false">
+
+        <!-- ── Set 1 ── -->
+        <div class="stat-item">
+          <div class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg></div>
+          <p class="stat-number">250<span>+</span></p>
+          <p class="stat-label">Custom Pools Built</p>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"/></svg></div>
+          <p class="stat-number">18<span>+</span></p>
+          <p class="stat-label">Years in Austin</p>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg></div>
+          <p class="stat-number">4.9<span>★</span></p>
+          <p class="stat-label">Google Rating</p>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/></svg></div>
+          <p class="stat-number">12<span>wk</span></p>
+          <p class="stat-label">Avg. Build Time</p>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/></svg></div>
+          <p class="stat-number">500<span>+</span></p>
+          <p class="stat-label">Happy Homeowners</p>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+          <p class="stat-number">100<span>%</span></p>
+          <p class="stat-label">Licensed &amp; Insured</p>
+        </div>
+
+        <!-- ── Set 2 — exact duplicate for seamless loop ── -->
+        <div class="stat-item" aria-hidden="true">
+          <div class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg></div>
+          <p class="stat-number">250<span>+</span></p>
+          <p class="stat-label">Custom Pools Built</p>
+        </div>
+
+        <div class="stat-item" aria-hidden="true">
+          <div class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z"/></svg></div>
+          <p class="stat-number">18<span>+</span></p>
+          <p class="stat-label">Years in Austin</p>
+        </div>
+
+        <div class="stat-item" aria-hidden="true">
+          <div class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg></div>
+          <p class="stat-number">4.9<span>★</span></p>
+          <p class="stat-label">Google Rating</p>
+        </div>
+
+        <div class="stat-item" aria-hidden="true">
+          <div class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/></svg></div>
+          <p class="stat-number">12<span>wk</span></p>
+          <p class="stat-label">Avg. Build Time</p>
+        </div>
+
+        <div class="stat-item" aria-hidden="true">
+          <div class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/></svg></div>
+          <p class="stat-number">500<span>+</span></p>
+          <p class="stat-label">Happy Homeowners</p>
+        </div>
+
+        <div class="stat-item" aria-hidden="true">
+          <div class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+          <p class="stat-number">100<span>%</span></p>
+          <p class="stat-label">Licensed &amp; Insured</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- /STATS BAR -->
+
+
+  <!-- =====================================================================
+     PROJECTS / GALLERY SECTION
+     Light grey bg, filter tabs, full-bleed card carousel
+     Desktop: drag to scroll + 4 cards visible
+     Mobile: touch swipe
+  ====================================================================== -->
+  <section id="projects">
+
+    <!-- Header + filters — inside container -->
+    <div class="container">
+      <div class="projects-header reveal fade-up">
+        <p class="eyebrow">Our Featured Projects</p>
+        <h2>Our Project Excellence</h2>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="projects-filters" role="tablist" aria-label="Filter projects by category">
+        <button class="projects-filter-btn is-active" data-filter="all">All Projects</button>
+        <button class="projects-filter-btn" data-filter="custom">Custom Builds</button>
+        <button class="projects-filter-btn" data-filter="renovation">Renovations</button>
+        <button class="projects-filter-btn" data-filter="luxury">Luxury Add-Ons</button>
+        <button class="projects-filter-btn" data-filter="outdoor">Outdoor Living</button>
+      </div>
+    </div>
+
+    <!-- Full-bleed carousel — outside container -->
+    <div class="projects-carousel-outer">
+
+      <div class="projects-track-wrap" id="projectsTrackWrap">
+        <div class="projects-track" id="projectsTrack">
+
+          <!-- ── CUSTOM BUILDS (4) ── -->
+          <div class="project-card" data-category="custom">
+            <picture><img class="project-card-img" src="images/home/jpg/home-projects-1-d.jpeg" alt="Barton Creek Estate" width="480" height="480" loading="lazy" decoding="async"></picture>
+            <div class="project-card-overlay" aria-hidden="true"></div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Barton Creek Estate</h3>
+              <div class="project-card-line" aria-hidden="true"></div>
+              <a href="html/gallery.html" class="project-card-link">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="custom">
+            <picture><img class="project-card-img" src="images/home/jpg/home-projects-2-d.jpeg" alt="Tarrytown Modern" width="480" height="480" loading="lazy" decoding="async"></picture>
+            <div class="project-card-overlay" aria-hidden="true"></div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Tarrytown Modern</h3>
+              <div class="project-card-line" aria-hidden="true"></div>
+              <a href="html/gallery.html" class="project-card-link">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="custom">
+            <picture><img class="project-card-img" src="images/home/jpg/home-projects-3-d.jpeg" alt="Circle C Oasis" width="480" height="480" loading="lazy" decoding="async"></picture>
+            <div class="project-card-overlay" aria-hidden="true"></div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Circle C Oasis</h3>
+              <div class="project-card-line" aria-hidden="true"></div>
+              <a href="html/gallery.html" class="project-card-link">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="custom">
+            <picture><img class="project-card-img" src="images/home/jpg/home-projects-4-d.jpeg" alt="Hyde Park Heights" width="480" height="480" loading="lazy" decoding="async"></picture>
+            <div class="project-card-overlay" aria-hidden="true"></div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Hyde Park Heights</h3>
+              <div class="project-card-line" aria-hidden="true"></div>
+              <a href="html/gallery.html" class="project-card-link">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+          <!-- ── RENOVATIONS (4) ── -->
+          <div class="project-card" data-category="renovation">
+            <picture><img class="project-card-img" src="images/renovations/renovations-1.png" alt="Lake Travis Refresh" width="480" height="480" loading="lazy" decoding="async"></picture>
+            <div class="project-card-overlay" aria-hidden="true"></div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Lake Travis Refresh</h3>
+              <div class="project-card-line" aria-hidden="true"></div>
+              <a href="html/gallery.html" class="project-card-link">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="renovation">
+            <picture><img class="project-card-img" src="images/renovations/renovations-2.png" alt="Rollingwood Revival" width="480" height="480" loading="lazy" decoding="async"></picture>
+            <div class="project-card-overlay" aria-hidden="true"></div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Rollingwood Revival</h3>
+              <div class="project-card-line" aria-hidden="true"></div>
+              <a href="html/gallery.html" class="project-card-link">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="renovation">
+            <picture><img class="project-card-img" src="images/renovations/renovations-3.png" alt="Cedar Park Renewal" width="480" height="480" loading="lazy" decoding="async"></picture>
+            <div class="project-card-overlay" aria-hidden="true"></div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Cedar Park Renewal</h3>
+              <div class="project-card-line" aria-hidden="true"></div>
+              <a href="html/gallery.html" class="project-card-link">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="renovation">
+            <picture><img class="project-card-img" src="images/renovations/renovations-4.png" alt="Brentwood Classic" width="480" height="480" loading="lazy" decoding="async"></picture>
+            <div class="project-card-overlay" aria-hidden="true"></div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Brentwood Classic</h3>
+              <div class="project-card-line" aria-hidden="true"></div>
+              <a href="html/gallery.html" class="project-card-link">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+          <!-- ── LUXURY ADD-ONS (4) ── -->
+          <div class="project-card" data-category="luxury">
+            <picture><img class="project-card-img" src="images/add-ons/addon-grotto.png" alt="Westlake Retreat" width="480" height="480" loading="lazy" decoding="async"></picture>
+            <div class="project-card-overlay" aria-hidden="true"></div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Westlake Retreat</h3>
+              <div class="project-card-line" aria-hidden="true"></div>
+              <a href="html/gallery.html" class="project-card-link">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="luxury">
+            <picture><img class="project-card-img" src="images/add-ons/addon-spa.png" alt="Bee Cave Spa" width="480" height="480" loading="lazy" decoding="async"></picture>
+            <div class="project-card-overlay" aria-hidden="true"></div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Bee Cave Spa</h3>
+              <div class="project-card-line" aria-hidden="true"></div>
+              <a href="html/gallery.html" class="project-card-link">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="luxury">
+            <picture><img class="project-card-img" src="images/add-ons/addon-fire-bowls.png" alt="Mueller Fire Lounge" width="480" height="480" loading="lazy" decoding="async"></picture>
+            <div class="project-card-overlay" aria-hidden="true"></div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Mueller Fire Lounge</h3>
+              <div class="project-card-line" aria-hidden="true"></div>
+              <a href="html/gallery.html" class="project-card-link">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="luxury">
+            <picture><img class="project-card-img" src="images/add-ons/addon-waterfall.png" alt="Pflugerville Water Wall" width="480" height="480" loading="lazy" decoding="async"></picture>
+            <div class="project-card-overlay" aria-hidden="true"></div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Pflugerville Water Wall</h3>
+              <div class="project-card-line" aria-hidden="true"></div>
+              <a href="html/gallery.html" class="project-card-link">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+          <!-- ── OUTDOOR LIVING (4) ── -->
+          <div class="project-card" data-category="outdoor">
+            <picture><img class="project-card-img" src="images/add-ons/addon-deck.png" alt="Steiner Ranch Resort" width="480" height="480" loading="lazy" decoding="async"></picture>
+            <div class="project-card-overlay" aria-hidden="true"></div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Steiner Ranch Resort</h3>
+              <div class="project-card-line" aria-hidden="true"></div>
+              <a href="html/gallery.html" class="project-card-link">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="outdoor">
+            <picture><img class="project-card-img" src="images/add-ons/addon-cabana.png" alt="Lakeway Cabana" width="480" height="480" loading="lazy" decoding="async"></picture>
+            <div class="project-card-overlay" aria-hidden="true"></div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Lakeway Cabana</h3>
+              <div class="project-card-line" aria-hidden="true"></div>
+              <a href="html/gallery.html" class="project-card-link">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="outdoor">
+            <picture><img class="project-card-img" src="images/add-ons/addon-pergola.png" alt="Clarksville Pergola" width="480" height="480" loading="lazy" decoding="async"></picture>
+            <div class="project-card-overlay" aria-hidden="true"></div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">Clarksville Pergola</h3>
+              <div class="project-card-line" aria-hidden="true"></div>
+              <a href="html/gallery.html" class="project-card-link">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="outdoor">
+            <picture><img class="project-card-img" src="images/add-ons/addon-outdoor-kitchen.png" alt="South Congress Kitchen" width="480" height="480" loading="lazy" decoding="async"></picture>
+            <div class="project-card-overlay" aria-hidden="true"></div>
+            <div class="project-card-info">
+              <h3 class="project-card-title">South Congress Kitchen</h3>
+              <div class="project-card-line" aria-hidden="true"></div>
+              <a href="html/gallery.html" class="project-card-link">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+        </div>
+        <!-- /projects-track -->
+      </div>
+      <!-- /projects-track-wrap -->
+
+    </div>
+    <!-- /projects-carousel-outer -->
+
+    <div class="projects-bottom-pad"></div>
+
+  </section>
+  <!-- /PROJECTS -->
+
+
+  <!-- =====================================================================
+     PROCESS SECTION
+     4-step timeline — alternating card/image left/right
+     Center vertical line fills as user scrolls (JS driven)
+     Mobile: single col, line on left edge
+  ====================================================================== -->
+  <section id="process">
+
+    <!-- Header -->
+    <div class="container">
+      <div class="process-header reveal fade-up">
+        <p class="eyebrow">How It Works</p>
+        <h2>Our Process From First Call to First Swim</h2>
+      </div>
+    </div>
+
+    <!-- Timeline body -->
+    <div class="process-body" id="processBody">
+
+      <!-- Desktop center line -->
+      <div class="process-line" aria-hidden="true">
+        <div class="process-line-fill" id="processLineFill"></div>
+      </div>
+
+      <!-- Mobile left line -->
+      <div class="process-line-mobile" aria-hidden="true">
+        <div class="process-line-mobile-fill" id="processLineMobileFill"></div>
+      </div>
+
+      <!-- ── STEP 01 ── -->
+      <div class="process-row reveal fade-up">
+        <div class="process-row-dot" aria-hidden="true"></div>
+
+        <!-- Card -->
+        <div class="process-card">
+          <span class="process-step-label">Step 01</span>
+          <h3>Quote &amp; Site Visit</h3>
+          <p>Fill out our quote form and we review your project within 24 hours. If it's a fit, we call you and schedule a free visit to your property. We walk the yard, assess soil conditions, access points, and what your lot can actually support — no guessing, no ballpark numbers.</p>
+        </div>
+
+        <!-- Image -->
+        <div class="process-img-wrap">
+          <picture>
+            <img src="images/home/jpg/about-video-d.jpeg"
+                 alt="Ridgeline Pools team visiting a homeowner's property"
+                 width="620" height="320"
+                 loading="lazy" decoding="async">
+          </picture>
+        </div>
+      </div>
+
+      <!-- ── STEP 02 ── -->
+      <div class="process-row reveal fade-up">
+        <div class="process-row-dot" aria-hidden="true"></div>
+
+        <!-- Image -->
+        <div class="process-img-wrap">
+          <picture>
+            <img src="images/home/jpg/home-projects-1-d.jpeg"
+                 alt="3D pool design and engineering review"
+                 width="620" height="320"
+                 loading="lazy" decoding="async">
+          </picture>
+        </div>
+
+        <!-- Card -->
+        <div class="process-card">
+          <span class="process-step-label">Step 02</span>
+          <h3>Design &amp; Permitting</h3>
+          <p>We design your pool from scratch and show you a full 3D rendering before anything is approved. Once you sign off, we handle every permit, city submission, and HOA approval ourselves. You don't make a single call to the city — we manage all of it start to finish.</p>
+        </div>
+      </div>
+
+      <!-- ── STEP 03 ── -->
+      <div class="process-row reveal fade-up">
+        <div class="process-row-dot" aria-hidden="true"></div>
+
+        <!-- Card -->
+        <div class="process-card">
+          <span class="process-step-label">Step 03</span>
+          <h3>Construction</h3>
+          <p>Our licensed in-house crew handles everything — excavation, gunite shell, plumbing, electrical, coping, tile, and equipment installation. No sub-contractors on structural work. We update you at every milestone so you always know exactly where your project stands.</p>
+        </div>
+
+        <!-- Image -->
+        <div class="process-img-wrap">
+          <picture>
+            <img src="images/home/jpg/final-cta-d.jpeg"
+                 alt="Ridgeline Pools crew during pool construction"
+                 width="620" height="320"
+                 loading="lazy" decoding="async">
+          </picture>
+        </div>
+      </div>
+
+      <!-- ── STEP 04 ── -->
+      <div class="process-row reveal fade-up">
+        <div class="process-row-dot" aria-hidden="true"></div>
+
+        <!-- Image -->
+        <div class="process-img-wrap">
+          <picture>
+            <img src="images/home/jpg/home-projects-3-d.jpeg"
+                 alt="Final pool walkthrough with homeowner"
+                 width="620" height="320"
+                 loading="lazy" decoding="async">
+          </picture>
+        </div>
+
+        <!-- Card -->
+        <div class="process-card">
+          <span class="process-step-label">Step 04</span>
+          <h3>Final Walkthrough &amp; Handover</h3>
+          <p>We walk you through every system before we hand over the keys — how to run your equipment, balance your chemicals, and what to watch for in the first 30 days. Every question answered, every detail explained. Then you jump in.</p>
+        </div>
+      </div>
+
+    </div>
+    <!-- /process-body -->
+
+  </section>
+  <!-- /PROCESS -->
+
+
+  <!-- =====================================================================
+     TESTIMONIALS SECTION
+     White bg, centered header, infinite slow marquee
+     Two identical sets of 6 cards — seamless loop
+     Pauses on hover
+  ====================================================================== -->
+  <section id="testimonials">
+
+    <div class="container">
+      <div class="testimonials-header reveal fade-up">
+        <p class="eyebrow">Our Clients Reviews</p>
+        <h2>Feedback From Happy Homeowners</h2>
+        <p>Real Austin families. Real pools. Real experiences — straight from the people who hired us.</p>
+      </div>
+    </div>
+
+    <!-- Full-width marquee — outside container -->
+    <div class="testimonials-marquee-wrap">
+      <div class="testimonials-track">
+
+        <!-- ── Set 1 ── -->
+
+        <div class="testimonial-card">
+          <div class="testimonial-top">
+            <img class="testimonial-avatar" src="images/home/testimonial-1.png" alt="Marcus & Julie T." width="72" height="72" loading="lazy" decoding="async">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+          </div>
+          <p class="testimonial-quote">"We interviewed four pool builders before choosing Ridgeline. The difference was clear from the first call — they actually came out, walked our yard, and told us exactly what was possible. No vague estimates, no pressure. The pool they built is beyond what we imagined."</p>
+          <div class="testimonial-author">
+            <p class="testimonial-name">Marcus &amp; Julie T.</p>
+            <p class="testimonial-role">Barton Creek, Austin TX</p>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-top">
+            <img class="testimonial-avatar" src="images/home/testimonial-2.png" alt="Sandra P." width="72" height="72" loading="lazy" decoding="async">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+          </div>
+          <p class="testimonial-quote">"I filled out the quote form on a Saturday morning. Marcus called me by Monday, visited Tuesday, and we had a real number by Wednesday. I've never had a contractor move that fast without cutting corners. The finished pool is absolutely stunning."</p>
+          <div class="testimonial-author">
+            <p class="testimonial-name">Sandra P.</p>
+            <p class="testimonial-role">Westlake Hills, Austin TX</p>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-top">
+            <img class="testimonial-avatar" src="images/home/testimonial-3.png" alt="David & Renee K." width="72" height="72" loading="lazy" decoding="async">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+          </div>
+          <p class="testimonial-quote">"Ridgeline handled every single permit and city approval. I didn't make one call to the city the entire time. They updated us at every milestone so we were never left wondering what was happening in our backyard. Truly professional from start to finish."</p>
+          <div class="testimonial-author">
+            <p class="testimonial-name">David &amp; Renee K.</p>
+            <p class="testimonial-role">Lake Travis, Austin TX</p>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-top">
+            <img class="testimonial-avatar" src="images/home/testimonial-4.png" alt="James W." width="72" height="72" loading="lazy" decoding="async">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+          </div>
+          <p class="testimonial-quote">"My family avoided our backyard for years because the old pool was such an eyesore. Ridgeline renovated it completely — new plaster, coping, equipment, the works. Now we're out there every single day. Worth every penny and then some."</p>
+          <div class="testimonial-author">
+            <p class="testimonial-name">James W.</p>
+            <p class="testimonial-role">Tarrytown, Austin TX</p>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-top">
+            <img class="testimonial-avatar" src="images/home/testimonial-5.png" alt="Carmen &amp; Luis R." width="72" height="72" loading="lazy" decoding="async">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+          </div>
+          <p class="testimonial-quote">"The 3D rendering before they broke ground was something else. We could see exactly what we were getting before a single shovel hit the dirt. That level of transparency is rare. Our backyard is now the best thing about our house."</p>
+          <div class="testimonial-author">
+            <p class="testimonial-name">Carmen &amp; Luis R.</p>
+            <p class="testimonial-role">Circle C Ranch, Austin TX</p>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-top">
+            <img class="testimonial-avatar" src="images/home/testimonial-6.png" alt="Tom H." width="72" height="72" loading="lazy" decoding="async">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            </div>
+          </div>
+          <p class="testimonial-quote">"I had been burned by a previous contractor who disappeared mid-project. Ridgeline was the complete opposite — they own their domain, gave me a clear contract, and I could have walked away at any point and kept everything. That kind of honesty is rare."</p>
+          <div class="testimonial-author">
+            <p class="testimonial-name">Tom H.</p>
+            <p class="testimonial-role">Steiner Ranch, Austin TX</p>
+          </div>
+        </div>
+
+        <!-- ── Set 2 — exact duplicate for seamless loop ── -->
+
+        <div class="testimonial-card" aria-hidden="true">
+          <div class="testimonial-top">
+            <img class="testimonial-avatar" src="images/home/testimonial-1.png" alt="" width="72" height="72" loading="lazy" decoding="async">
+            <div class="testimonial-stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+          </div>
+          <p class="testimonial-quote">"We interviewed four pool builders before choosing Ridgeline. The difference was clear from the first call — they actually came out, walked our yard, and told us exactly what was possible. No vague estimates, no pressure. The pool they built is beyond what we imagined."</p>
+          <div class="testimonial-author"><p class="testimonial-name">Marcus &amp; Julie T.</p><p class="testimonial-role">Barton Creek, Austin TX</p></div>
+        </div>
+
+        <div class="testimonial-card" aria-hidden="true">
+          <div class="testimonial-top">
+            <img class="testimonial-avatar" src="images/home/testimonial-2.png" alt="" width="72" height="72" loading="lazy" decoding="async">
+            <div class="testimonial-stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+          </div>
+          <p class="testimonial-quote">"I filled out the quote form on a Saturday morning. Marcus called me by Monday, visited Tuesday, and we had a real number by Wednesday. I've never had a contractor move that fast without cutting corners. The finished pool is absolutely stunning."</p>
+          <div class="testimonial-author"><p class="testimonial-name">Sandra P.</p><p class="testimonial-role">Westlake Hills, Austin TX</p></div>
+        </div>
+
+        <div class="testimonial-card" aria-hidden="true">
+          <div class="testimonial-top">
+            <img class="testimonial-avatar" src="images/home/testimonial-3.png" alt="" width="72" height="72" loading="lazy" decoding="async">
+            <div class="testimonial-stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+          </div>
+          <p class="testimonial-quote">"Ridgeline handled every single permit and city approval. I didn't make one call to the city the entire time. They updated us at every milestone so we were never left wondering what was happening in our backyard. Truly professional from start to finish."</p>
+          <div class="testimonial-author"><p class="testimonial-name">David &amp; Renee K.</p><p class="testimonial-role">Lake Travis, Austin TX</p></div>
+        </div>
+
+        <div class="testimonial-card" aria-hidden="true">
+          <div class="testimonial-top">
+            <img class="testimonial-avatar" src="images/home/testimonial-4.png" alt="" width="72" height="72" loading="lazy" decoding="async">
+            <div class="testimonial-stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+          </div>
+          <p class="testimonial-quote">"My family avoided our backyard for years because the old pool was such an eyesore. Ridgeline renovated it completely — new plaster, coping, equipment, the works. Now we're out there every single day. Worth every penny and then some."</p>
+          <div class="testimonial-author"><p class="testimonial-name">James W.</p><p class="testimonial-role">Tarrytown, Austin TX</p></div>
+        </div>
+
+        <div class="testimonial-card" aria-hidden="true">
+          <div class="testimonial-top">
+            <img class="testimonial-avatar" src="images/home/testimonial-5.png" alt="" width="72" height="72" loading="lazy" decoding="async">
+            <div class="testimonial-stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+          </div>
+          <p class="testimonial-quote">"The 3D rendering before they broke ground was something else. We could see exactly what we were getting before a single shovel hit the dirt. That level of transparency is rare. Our backyard is now the best thing about our house."</p>
+          <div class="testimonial-author"><p class="testimonial-name">Carmen &amp; Luis R.</p><p class="testimonial-role">Circle C Ranch, Austin TX</p></div>
+        </div>
+
+        <div class="testimonial-card" aria-hidden="true">
+          <div class="testimonial-top">
+            <img class="testimonial-avatar" src="images/home/testimonial-6.png" alt="" width="72" height="72" loading="lazy" decoding="async">
+            <div class="testimonial-stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+          </div>
+          <p class="testimonial-quote">"I had been burned by a previous contractor who disappeared mid-project. Ridgeline was the complete opposite — they own their domain, gave me a clear contract, and I could have walked away at any point and kept everything. That kind of honesty is rare."</p>
+          <div class="testimonial-author"><p class="testimonial-name">Tom H.</p><p class="testimonial-role">Steiner Ranch, Austin TX</p></div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- /TESTIMONIALS -->
+
+
+  <!-- =====================================================================
+     BLOG SECTION
+     Light grey bg, 6 cards, 3 visible at once
+     Auto-advances left every 3s — smooth slide transition
+     Hover pauses. Dots show current slide.
+  ====================================================================== -->
+  <section id="blog">
+
+    <!-- Header -->
+    <div class="container">
+      <div class="blog-header reveal fade-up">
+        <p class="eyebrow">Pool Tips &amp; Insights</p>
+        <h2>Resources For Austin Homeowners</h2>
+        <p>Straight talk on pools — when to renovate, how to maintain, and what to watch out for.</p>
+      </div>
+    </div>
+
+    <!-- Carousel — inside container so cards respect page margins -->
+    <div class="container">
+      <div class="blog-carousel-outer" id="blogCarouselOuter">
+        <div class="blog-track-clip">
+          <div class="blog-track" id="blogTrack">
+
+          <!-- Card 1 -->
+          <div class="blog-card">
+            <div class="blog-card-img-wrap">
+              <picture>
+                <img src="images/home/jpg/services-renovation-d.jpeg" alt="How to know when your pool needs replacing vs remodeling"
+                     width="480" height="300" loading="lazy" decoding="async">
+              </picture>
+              <div class="blog-card-meta">
+                <span class="blog-meta-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+                  Ridgeline Pools
+                </span>
+                <span class="blog-meta-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z"/></svg>
+                  Renovation
+                </span>
+                <span class="blog-meta-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25"/></svg>
+                  May 12, 2025
+                </span>
+              </div>
+            </div>
+            <div class="blog-card-body">
+              <h3 class="blog-card-title">Replace or Remodel? How to Know What Your Pool Actually Needs</h3>
+              <p class="blog-card-excerpt">Cracked shell, constant leaks, equipment that keeps tripping the breaker — at some point patching the same problems every season costs more than starting fresh. Here's how to know which side of that line you're on.</p>
+              <a href="#" class="blog-card-link">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="blog-card">
+            <div class="blog-card-img-wrap">
+              <picture>
+                <img src="images/home/jpg/home-projects-5-d.jpeg" alt="Pool maintenance guide for Austin homeowners"
+                     width="480" height="300" loading="lazy" decoding="async">
+              </picture>
+              <div class="blog-card-meta">
+                <span class="blog-meta-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>Ridgeline Pools</span>
+                <span class="blog-meta-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z"/></svg>Maintenance</span>
+                <span class="blog-meta-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25"/></svg>Apr 3, 2025</span>
+              </div>
+            </div>
+            <div class="blog-card-body">
+              <h3 class="blog-card-title">The Austin Pool Maintenance Guide: What to Do Every Month</h3>
+              <p class="blog-card-excerpt">Central Texas heat is hard on pool chemistry. Here's a month-by-month breakdown of what your pool actually needs to stay clean, balanced, and running efficiently year-round — from January prep to peak August heat.</p>
+              <a href="#" class="blog-card-link">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="blog-card">
+            <div class="blog-card-img-wrap">
+              <picture>
+                <img src="images/home/jpg/about-pool-d.jpeg" alt="How to spot a bad pool builder before you hire them"
+                     width="480" height="300" loading="lazy" decoding="async">
+              </picture>
+              <div class="blog-card-meta">
+                <span class="blog-meta-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>Ridgeline Pools</span>
+                <span class="blog-meta-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z"/></svg>Hiring Tips</span>
+                <span class="blog-meta-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25"/></svg>Mar 18, 2025</span>
+              </div>
+            </div>
+            <div class="blog-card-body">
+              <h3 class="blog-card-title">5 Red Flags That Tell You to Walk Away From a Pool Builder</h3>
+              <p class="blog-card-excerpt">No written contract. Vague timelines. Cash-only deposits. If a builder can't answer basic questions about their process, that's not a coincidence. Here's what to watch for before you sign anything.</p>
+              <a href="#" class="blog-card-link">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="blog-card">
+            <div class="blog-card-img-wrap">
+              <picture>
+                <img src="images/home/jpg/final-cta-d.jpeg" alt="Gunite vs fiberglass pools — what's the difference"
+                     width="480" height="300" loading="lazy" decoding="async">
+              </picture>
+              <div class="blog-card-meta">
+                <span class="blog-meta-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>Ridgeline Pools</span>
+                <span class="blog-meta-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z"/></svg>Education</span>
+                <span class="blog-meta-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25"/></svg>Feb 27, 2025</span>
+              </div>
+            </div>
+            <div class="blog-card-body">
+              <h3 class="blog-card-title">Gunite vs. Fiberglass: Why We Only Build One and Why It Matters</h3>
+              <p class="blog-card-excerpt">Fiberglass is faster and cheaper upfront. Gunite lasts 30–50 years, conforms to any shape, and holds up to Texas soil shifts that would crack a fiberglass shell. Here's the honest breakdown of both.</p>
+              <a href="#" class="blog-card-link">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="blog-card">
+            <div class="blog-card-img-wrap">
+              <picture>
+                <img src="images/home/jpg/services-custom-d.jpeg" alt="How much does a custom pool cost in Austin TX"
+                     width="480" height="300" loading="lazy" decoding="async">
+              </picture>
+              <div class="blog-card-meta">
+                <span class="blog-meta-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>Ridgeline Pools</span>
+                <span class="blog-meta-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z"/></svg>Pricing</span>
+                <span class="blog-meta-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25"/></svg>Jan 15, 2025</span>
+              </div>
+            </div>
+            <div class="blog-card-body">
+              <h3 class="blog-card-title">What Does a Custom Pool Actually Cost in Austin? An Honest Breakdown</h3>
+              <p class="blog-card-excerpt">Most homeowners go into the process with no idea what things cost — and some builders take advantage of that. Here's a transparent look at what drives pool pricing in Austin and what you should expect to pay for quality work.</p>
+              <a href="#" class="blog-card-link">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="blog-card">
+            <div class="blog-card-img-wrap">
+              <picture>
+                <img src="images/home/jpg/services-add-ons-d.jpeg" alt="Outdoor living features that add value to your Austin home"
+                     width="480" height="300" loading="lazy" decoding="async">
+              </picture>
+              <div class="blog-card-meta">
+                <span class="blog-meta-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>Ridgeline Pools</span>
+                <span class="blog-meta-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z"/></svg>Outdoor Living</span>
+                <span class="blog-meta-item"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25"/></svg>Dec 9, 2024</span>
+              </div>
+            </div>
+            <div class="blog-card-body">
+              <h3 class="blog-card-title">Beyond the Pool: Outdoor Features That Actually Add Home Value</h3>
+              <p class="blog-card-excerpt">A pool alone can add 5–15% to your home value. Add an outdoor kitchen, pergola, or fire feature and you're transforming how the whole backyard functions — and what buyers will pay for it. Here's what's worth adding.</p>
+              <a href="#" class="blog-card-link">Read More <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+            </div>
+          </div>
+
+        </div>
+        <!-- /blog-track -->
+        </div>
+        <!-- /blog-track-clip -->
+
+        <!-- Desktop prev/next arrows — sit on sides of carousel -->
+        <div class="blog-arrows">
+          <button class="blog-arrow-btn" id="blogPrev" aria-label="Previous blog posts">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+            </svg>
+          </button>
+          <button class="blog-arrow-btn" id="blogNext" aria-label="Next blog posts">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Pagination dots -->
+      <div class="blog-footer" id="blogDots" aria-label="Blog carousel navigation">
+        <!-- Dots injected by JS based on total slides -->
+      </div>
+    </div>
+
+  </section>
+  <!-- /BLOG -->
+
+
+  <!-- =====================================================================
+       FAQ
+  ====================================================================== -->
+  <section id="faq" class="section-padding">
+    <div class="container">
+
+      <!-- Header -->
+      <div class="faq-header reveal fade-up">
+        <p class="eyebrow">Questions &amp; Answers</p>
+        <h2>Everything You Need To Know Before You Build</h2>
+        <p>Straight answers to what Austin homeowners ask us most — from cost and timeline to permits and warranty.</p>
+      </div>
+
+      <div class="faq-layout">
+
+        <!-- ── Left: image + floating call card ── -->
+        <div class="faq-media reveal fade-right">
+          <img
+            class="faq-img"
+            src="images/home/jpg/faq-img-d.jpeg"
+            alt="Ridgeline Pools project manager on a Central Texas job site"
+            width="600"
+            height="720"
+            loading="lazy"
+            decoding="async">
+
+          <!-- Floating call-to-action bar -->
+          <div class="faq-callout">
+            <span class="faq-callout-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6.62 10.79a15.53 15.53 0 006.59 6.59l2.2-2.2a1 1 0 011.05-.24 11.36 11.36 0 003.55.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.55 1 1 0 01-.24 1.05l-2.2 2.19z"/>
+              </svg>
+            </span>
+            <span class="faq-callout-text">
+              <span class="faq-callout-label">Call us</span>
+              <a href="tel:+15124567890">(512) 456-7890</a>
+            </span>
+            <a href="html/quote.html" class="faq-callout-btn">
+              Get Quote
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- ── Right: accordion ── -->
+        <div class="faq-accordion reveal fade-left">
+
+          <!-- Item 1 -->
+          <div class="faq-item">
+            <h3 class="faq-q-wrap">
+              <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-1">
+                <span>Do you build custom gunite pools or use pre-made shells?</span>
+                <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </h3>
+            <div class="faq-a" id="faq-a-1" role="region">
+              <div class="faq-a-inner">
+                <p>Every Ridgeline pool is custom-built gunite — engineered and shaped on your property, not dropped in as a pre-formed fiberglass shell. That means we can match any size, depth, or shape your yard and vision call for, with the structural durability gunite is known for in Central Texas soil.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="faq-item">
+            <h3 class="faq-q-wrap">
+              <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-2">
+                <span>How long does a typical pool build take?</span>
+                <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </h3>
+            <div class="faq-a" id="faq-a-2" role="region">
+              <div class="faq-a-inner">
+                <p>Most custom gunite projects run 8 to 12 weeks from excavation to first swim, depending on design complexity, weather, and any decking or landscaping work. After your site visit we give you a realistic, milestone-based schedule — and we keep you updated at every phase.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 — open by default -->
+          <div class="faq-item is-open">
+            <h3 class="faq-q-wrap">
+              <button type="button" class="faq-q" aria-expanded="true" aria-controls="faq-a-3">
+                <span>How much does a custom pool cost in Austin?</span>
+                <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </h3>
+            <div class="faq-a" id="faq-a-3" role="region">
+              <div class="faq-a-inner">
+                <p>Most of our custom gunite builds in the Austin area start in the mid five figures and scale with size, depth, finishes, and features like spas, tanning ledges, or water features. Rather than quote a vague ballpark, we price every project after walking your yard — so the number you get reflects your real lot and goals.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="faq-item">
+            <h3 class="faq-q-wrap">
+              <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-4">
+                <span>Do you handle permits and HOA approvals?</span>
+                <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </h3>
+            <div class="faq-a" id="faq-a-4" role="region">
+              <div class="faq-a-inner">
+                <p>Yes. We manage the full permitting process with the City of Austin and surrounding municipalities, and we'll prepare the documentation your HOA needs for approval. Handling the paperwork is part of the service — you don't have to chase down a single form.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="faq-item">
+            <h3 class="faq-q-wrap">
+              <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-5">
+                <span>What areas around Austin do you serve?</span>
+                <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </h3>
+            <div class="faq-a" id="faq-a-5" role="region">
+              <div class="faq-a-inner">
+                <p>We build across the greater Austin area and Central Texas — including Barton Creek, Westlake, Lakeway, Bee Cave, Dripping Springs, Round Rock, and Georgetown. Not sure if you're in range? Send us your address and we'll confirm right away.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="faq-item">
+            <h3 class="faq-q-wrap">
+              <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a-6">
+                <span>What kind of warranty comes with a Ridgeline pool?</span>
+                <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </button>
+            </h3>
+            <div class="faq-a" id="faq-a-6" role="region">
+              <div class="faq-a-inner">
+                <p>Your pool's gunite shell is backed by a structural warranty, and the equipment we install carries the manufacturers' warranties on top of our own workmanship guarantee. Because we build with our own crew, the people standing behind the work are the same people who poured it.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- /faq-accordion -->
+
+      </div>
+      <!-- /faq-layout -->
+    </div>
+  </section>
+  <!-- /FAQ -->
+
+
+  <!-- =====================================================================
+       CONTACT
+  ====================================================================== -->
+  <section id="contact">
+
+    <!-- Top band: maroon intro | dark contact details -->
+    <div class="contact-top">
+      <div class="contact-top-left reveal fade-up">
+        <p class="eyebrow eyebrow-light">Contact With Us Now</p>
+        <h2>Let's Build Your Backyard Together</h2>
+        <p>Tell us about your project and we'll get back to you within 24 hours. No pressure, no vague ballparks — just straight answers from the crew who'll actually build it.</p>
+      </div>
+
+      <div class="contact-top-right reveal fade-up">
+        <div class="contact-detail">
+          <span class="contact-detail-label">Email</span>
+          <a href="mailto:hello@ridgelinepools.com">hello@ridgelinepools.com</a>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail-label">Hot Line</span>
+          <a href="tel:+15124567890">(512) 456-7890</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Body: form | map -->
+    <div class="contact-body">
+
+      <!-- Left: form -->
+      <div class="contact-form-col reveal fade-right">
+        <form class="contact-form" action="#" method="POST">
+          <div class="contact-form-row">
+            <div class="contact-field">
+              <label for="contact-name" class="sr-only">Full name</label>
+              <input type="text" id="contact-name" name="name" placeholder="Full name*" autocomplete="name" required>
+            </div>
+            <div class="contact-field">
+              <label for="contact-email" class="sr-only">Email Address</label>
+              <input type="email" id="contact-email" name="email" placeholder="Email Address*" autocomplete="email" required>
+            </div>
+          </div>
+
+          <div class="contact-form-row">
+            <div class="contact-field">
+              <label for="contact-phone" class="sr-only">Phone Number</label>
+              <input type="tel" id="contact-phone" name="phone" placeholder="Phone Number*" autocomplete="tel" required>
+            </div>
+            <div class="contact-field">
+              <label for="contact-service" class="sr-only">Your Services</label>
+              <select id="contact-service" name="service" required>
+                <option value="" disabled selected>Your Services</option>
+                <option value="custom">Custom Pool Construction</option>
+                <option value="renovation">Remodeling &amp; Renovation</option>
+                <option value="add-ons">Luxury Features &amp; Add-Ons</option>
+                <option value="maintenance">Maintenance &amp; Upkeep</option>
+                <option value="other">Something Else</option>
+              </select>
+              <svg class="contact-select-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="contact-field">
+            <label for="contact-message" class="sr-only">Message</label>
+            <textarea id="contact-message" name="message" rows="6" placeholder="Message*" required></textarea>
+          </div>
+
+          <button type="submit" class="contact-submit">
+            Send Message
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Right: map + floating address card -->
+      <div class="contact-map-col reveal fade-left">
+        <iframe
+          class="contact-map"
+          title="Ridgeline Pools service area — Austin, Texas"
+          src="https://www.google.com/maps?q=Austin,+Texas&z=11&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="contact-map-card">
+          <span class="contact-map-card-eyebrow">Our Studio</span>
+          <p class="contact-map-card-title">Ridgeline Pools HQ</p>
+          <p class="contact-map-card-addr">18 Ridgeline Drive<br>Austin, TX 78701</p>
+        </div>
+      </div>
+
+    </div>
+    <!-- /contact-body -->
+  </section>
+  <!-- /CONTACT -->
+
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand"><span class="footer-logo-text">RIDGELINE<span>.</span></span><p>Austin's premier custom gunite pool builder.</p><div class="footer-social"><a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a><a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z"/></svg></a></div></div>
+        <div class="footer-col footer-nav"><h4>Pages</h4><ul><li><a href="#hero">Home</a></li><li><a href="html/about.html">About</a></li><li><a href="#services">Services</a></li><li><a href="html/gallery.html">Gallery</a></li><li><a href="#contact">Contact</a></li></ul></div>
+        <div class="footer-col footer-contact"><h4>Get In Touch</h4><address><p>18 Ridgeline Drive<br>Austin, TX 78701</p><a href="tel:+15124567890">(512) 456-7890</a><a href="mailto:hello@ridgelinepools.com">hello@ridgelinepools.com</a></address></div>
+        <div class="footer-col footer-newsletter"><h4>Stay In Touch</h4><p>Pool tips and project showcases — straight to your inbox.</p><form class="footer-form" action="#" method="POST"><label for="footer-email-q" class="sr-only">Email</label><input type="email" id="footer-email-q" name="email" placeholder="Enter your email" autocomplete="email" required><button type="submit" class="btn-primary">Subscribe <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/></svg></button></form></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2025 Ridgeline Pools. All rights reserved. Designed by MigsFlow Web Design.</p></div>
+    </div>
+  </footer>
+
+
+
+  <!-- =====================================================================
+     SCRIPTS
+  ====================================================================== -->
+  <script defer src="main.js"></script>
+
+</body>
+</html>
