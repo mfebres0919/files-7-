@@ -67,6 +67,13 @@
 
 .cfg-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 
+/* Tablet/desktop: stack each group's options into a single left-aligned column
+   (matching Add-ons) so every group reads consistently instead of wrapping 2-up.
+   Mobile keeps the row-wrap layout that already looks good. */
+@media (min-width: 768px) {
+  .cfg-pills { flex-direction: column; flex-wrap: nowrap; align-items: flex-start; }
+}
+
 /* ── Pill toggle ──────────────────────────────────────────────────────── */
 .cfg-pill {
   display: inline-flex;
@@ -240,7 +247,7 @@
   font-size: 0.68rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  padding: 0.28rem 0.55rem;
+  padding: 0.68rem 0.55rem;
   border-radius: 5px;
 }
 
@@ -440,4 +447,52 @@
     border-bottom: 2px solid #8B0000;
   }
   @page { margin: 1.5cm; size: A4; }
+  .cfg-finish-preview { display: none !important; }
+}
+
+/* =============================================================================
+   FINISH PREVIEW — appears under the Finish options when one is chosen
+============================================================================= */
+.cfg-finish-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.85rem;
+}
+.cfg-finish-preview[hidden] { display: none; }
+
+.cfg-finish-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.6rem 0.7rem;
+  background: var(--white);
+  border: 1px solid var(--grey-200);
+  border-left: 3px solid var(--maroon);
+  border-radius: 8px;
+  animation: cfgPop 0.28s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.cfg-finish-swatch {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 6px;
+  flex-shrink: 0;
+  border: 1px solid rgba(0,0,0,0.15);
+  box-shadow: inset 0 1px 4px rgba(0,0,0,0.18);
+}
+
+.cfg-finish-text { display: flex; flex-direction: column; gap: 0.1rem; min-width: 0; line-height: 1.3; }
+.cfg-finish-text strong {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
+  color: var(--text-primary);
+}
+.cfg-finish-text span { font-size: 0.78rem; color: var(--text-muted); }
+
+@keyframes cfgPop {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
 }

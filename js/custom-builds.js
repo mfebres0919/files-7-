@@ -20,6 +20,18 @@
      at $85k+" promise on the home page, so the card is never empty. */
   const BASE_DEFAULT = { min: 85000, max: 130000 };
 
+  /* Finish details — drives the swatch + blurb that pops up on selection */
+  const FINISH_INFO = {
+    plaster: { name: 'Plaster',    swatch: '#e9edf2',
+               desc: 'Smooth, classic white-plaster interior — the timeless, budget-friendly standard.' },
+    quartz:  { name: 'Quartz',     swatch: '#c4ccd4',
+               desc: 'Quartz-aggregate finish — tougher, smoother and more stain-resistant than plaster.' },
+    pebble:  { name: 'Pebble',     swatch: '#5f6f63',
+               desc: 'Natural pebble finish — richly textured, ultra-durable and premium underfoot.' },
+    tile:    { name: 'Glass tile', swatch: 'linear-gradient(135deg,#1f6f8b,#39b8cf)',
+               desc: 'Full glass-tile interior — shimmering, luxurious and the longest-lasting option.' },
+  };
+
   const pills   = Array.from(root.querySelectorAll('.cfg-pill'));
   const cards   = Array.from(root.querySelectorAll('.cfg-card'));
 
@@ -35,6 +47,7 @@
     noResults: document.getElementById('cfgNoResults'),
     reset:     document.getElementById('cfgReset'),
     save:      document.getElementById('cfgSave'),
+    finishPreview: document.getElementById('cfgFinishPreview'),
   };
 
   /* ── Formatting helpers ───────────────────────────────────────────────── */
@@ -101,6 +114,28 @@
         els.selected.hidden = false;
       } else {
         els.selected.hidden = true;
+      }
+    }
+
+    /* Finish preview — pop up a swatch + blurb for each chosen finish */
+    if (els.finishPreview) {
+      if (sel.finish.length) {
+        els.finishPreview.innerHTML = sel.finish.map((p) => {
+          const f = FINISH_INFO[p.dataset.value] || {};
+          return (
+            '<div class="cfg-finish-chip">' +
+              '<span class="cfg-finish-swatch" style="background:' + (f.swatch || '#cccccc') + '"></span>' +
+              '<span class="cfg-finish-text">' +
+                '<strong>' + (f.name || p.dataset.label) + '</strong>' +
+                '<span>' + (f.desc || '') + '</span>' +
+              '</span>' +
+            '</div>'
+          );
+        }).join('');
+        els.finishPreview.hidden = false;
+      } else {
+        els.finishPreview.hidden = true;
+        els.finishPreview.innerHTML = '';
       }
     }
 
