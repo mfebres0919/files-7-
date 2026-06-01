@@ -573,6 +573,7 @@
     align-items: flex-end;
     justify-content: space-between;
     gap: 3rem;
+    padding-top: 4rem;
   }
 }
 
@@ -2960,3 +2961,10 @@
 
 /* Offset in-page anchor jumps so the sticky navbar doesn't cover headings */
 #contact, #faq { scroll-margin-top: 90px; }
+
+.link {
+  color: var(--white);
+  font-weight: 700;
+  font-style: italic;
+  text-decoration: underline;
+}

@@ -82,7 +82,7 @@
   padding: 0.5rem 0.9rem;
   background: var(--white);
   border: 1.5px solid var(--grey-200);
-  border-radius: 999px;
+  border-radius: 0;
   font-family: var(--font-body);
   font-size: 0.85rem;
   font-weight: 500;

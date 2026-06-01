@@ -339,7 +339,19 @@ p {
 /* ── Bottom bar ── */
 .footer-bottom {
   padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
   text-align: center;
+}
+
+@media (min-width: 600px) {
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
 }
 
 .footer-bottom p {
@@ -347,6 +359,18 @@ p {
   color: var(--grey-400);
   letter-spacing: 0.02em;
 }
+
+.footer-privacy {
+  font-size: 0.78rem;
+  color: var(--grey-400);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-family: var(--font-display);
+  font-weight: 700;
+  white-space: nowrap;
+  transition: color var(--transition);
+}
+.footer-privacy:hover { color: var(--white); }
 
 /* ── Scroll to top button ── */
 .scroll-top-btn {
